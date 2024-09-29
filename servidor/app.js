@@ -50,7 +50,7 @@ const startServer = async () => {
 
 startServer().then(() => {
     // Iniciar el servidor
-    const PORT = process.env.PORT || 3000;
+    const PORT = process.env.PORT || 8080;
     app.listen(PORT, () => {
         console.log(`Servidor ejecutándose en el puerto ${PORT}`);
     });

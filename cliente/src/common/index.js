@@ -1,4 +1,4 @@
-const backendDomain = 'http://localhost:3001';
+const backendDomain = process.env.REACT_APP_BACKEND_URL;
 
 export const authApi = {
     register: {
