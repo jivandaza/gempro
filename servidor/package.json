@@ -5,7 +5,7 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "start": "node api/app.js",
+    "start": "node app.js",
     "dev": "nodemon app.js",
     "test": "jest"
   },
