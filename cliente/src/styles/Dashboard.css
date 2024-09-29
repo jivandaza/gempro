@@ -1,0 +1,183 @@
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;           
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container2, .container3, .container4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 150px;
+    padding: 20px;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+}
+
+
+.titleH3 {
+    margin-left: 145px; /* Ajusta el valor para moverlo más a la derecha */
+}
+
+.options-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.options-list li {
+    position: absolute;            
+    top: 0px;                    
+    left: 50%;                     
+    transform: translateX(-50%);   
+    text-align: center;            
+    padding: 5px 10px;            
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 4px;            
+    font-weight: bold;
+}
+/* de aqui en adelante MENA*/
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-column {
+    width: 45%;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons-img {
+    background-color: transparent;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+/* Imagen de descuento */
+
+.discount-imageDescuento {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 570px;
+    
+}
+
+/* Imagen de publicidad 1 */
+.imagePublicidad1-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/* Columnas de publicidad */
+.columna-1, .columna-2, .columna-3, .columna-4 {
+    width: 45%; /* Ancho de cada columna */
+    background-color: rgb(107, 105, 105); /* Color de fondo para demostración */
+    margin-top: 50px;
+    position: relative; /* Posición relativa para posicionar el contenido */
+}
+.contenido-columna {
+    position: absolute;
+    bottom: 20px; /* Ajusta la distancia del contenido al borde inferior */
+    left: 50%; /* Centra el contenido horizontalmente */
+    transform: translateX(-50%); /* Centra el contenido horizontalmente */
+    background-color: rgba(253, 242, 242, 0.8); /* Fondo del contenido */
+    padding: 10px;
+    text-align: center;
+    width: 90%; /* Ancho del contenido */
+}
+
+.columna-1 {
+    background-image: url('../../public/imagenes/DashboardImagenes/Publicidad1.png');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.columna-2 {
+    width: 40%;
+    height: 400px;
+    background-image: url('../../public/imagenes/DashboardImagenes/Publicidad2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.imagePublicidad2-container {
+    background-image: url('../../public/imagenes/DashboardImagenes/Publicidad6.png');
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    position: relative; /* Posición relativa para posicionar el mensaje */
+    height: 600px; /* Altura del contenedor */
+}
+
+.discount-imagePublicidad2 {
+    max-width: 100%;
+    height: auto;
+
+}
+.mensaje {
+    position: absolute;
+    bottom: 20px; /* Ajusta la distancia del mensaje al borde inferior */
+    left: 50%; /* Centra el mensaje horizontalmente */
+    transform: translateX(-50%); /* Centra el mensaje horizontalmente */
+    background-color: rgba(253, 242, 242, 0.8); /* Fondo del mensaje */
+    padding: 10px;
+    text-align: center;
+    width: 70%; /* Ancho del mensaje */
+}
+
+.imagePublicidad3-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.columna-3, .columna-4 {
+    width: 45%; /* Ancho de cada columna */
+    background-color: rgb(107, 105, 105); /* Color de fondo para demostración */
+    margin-top: relative;
+}
+
+.columna-3 {
+    background-image: url('../../public/imagenes/DashboardImagenes/Publicidad8.png');
+    height: 400px; 
+}
+
+.columna-4 {
+    margin-top: 20px;
+    width: 40%; 
+    
+    height: 800px;
+    background-image: url('../../public/imagenes/DashboardImagenes/Publicidad9.png');
+}

@@ -1,0 +1,197 @@
+.backgroundRM {
+  background-image: url('../../public/imagenes/fondo_inicio.png');
+  height: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92.8vh;
+}
+
+.backgroundRP {
+  background-image: url('../../public/imagenes/fondo_inicio.png');
+  height: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92.8vh;
+}
+
+.backgroundRU {
+  background-image: url('../../public/imagenes/fondo_inicio.png');
+  height: 40%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92.8vh;
+}
+.backgroundRCli {
+  background-image: url('../../public/imagenes/fondo_inicio.png');
+  height: 30%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92.8vh;
+}
+.containerRM {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+.containerRU {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+.containerRCli{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+.form_controlRM {
+  margin-bottom: 1rem;
+  margin: 0 0 8px;
+  text-align: left;
+}
+.tituloU-C{
+  margin-bottom: 10px;
+}
+.form_controlRU {
+  margin-bottom: 1rem;
+  margin: 0 0 2px;
+  text-align: left;
+}
+
+.form_controlRU .two-column-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.inputUID{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 5px;
+  margin: 0px 0px 6px;
+}
+.inputUCli{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.form_control label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form_control input {
+  width: calc(50% - 10px);
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.inputU {
+  width: 100%;
+  padding: 0.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.btn-submitRM {
+  background-color: #a76f06;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background-color: #f4a20a;
+}
+.combobox {
+  width: 100%;
+  padding: 1px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  height: 10%;
+}
+#id_material.combobox,
+#id_categoria.combobox{
+  padding: 1px;
+  margin-top: 1px;
+  margin-bottom: 5px;
+}
+
+/* Image Upload */
+.image-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-label {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.upload-label:hover {
+  border-color: #aaa;
+}
+
+.upload-input {
+  display: none;
+}
+
+.image-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder {
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+}

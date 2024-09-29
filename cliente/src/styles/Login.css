@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.backgroundLG {
+    background-image: url('../../public/imagenes/fondo_inicio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92.8vh;
+}
+
+.login-containerLG {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.form_controlLG {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+input[type="email"],
+input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.btn-submitLG {
+    background-color: #a76f06;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #f4a20a;
+}
+
+#mensaje {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.title {
+    position: absolute;
+    top: 10px; 
+    left: 150px; 
+    color: #352302;
+  }
+.registrarse{
+    margin-bottom: 20px;
+}
+.enlace {
+    text-decoration: none;
+    color: inherit;
+}
+.enlace:visited{
+    color: inherit;
+    text-decoration: none;
+}
+.enlace .negrita {
+    font-weight: bold;
+}

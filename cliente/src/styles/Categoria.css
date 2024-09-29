@@ -1,0 +1,75 @@
+.titleP {
+    padding: 0;
+    margin-left: 20px; 
+}
+
+.containerCategorias {
+    display: flex;               
+    justify-content: space-around; 
+    align-items: center;         
+    flex-wrap: wrap;             
+    margin: 5px;                
+    padding: 5px;               
+}
+
+.opcionC {
+    background-color: #eee8cf;   
+    padding: 80px;               
+    margin: 15px;                
+    border-radius: 8px;          
+    text-align: center;          
+    flex: 1;                    
+    min-width: 200px;            
+    max-width: 400px;             
+    display: flex;               
+    flex-direction: column;      
+    align-items: center;         
+    background-size: 100% auto;  
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 310px;               
+    position: relative;         
+}
+
+.categoriaTexto {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.pulseras {
+    background-image: url('../../public/imagenes/Pulseras/Oro/principal.jpg');
+    transition: transform 0.3s ease;
+}
+.anillosSolitarios {
+    background-image: url('../../public/imagenes/AnilloSolitarios/piedras/principal.jpg');
+    transition: transform 0.3s ease;
+}
+
+.anillosMatrimonio {
+    background-image: url('../../public/imagenes/AnillosdeMatrimonio/principal.jpg');
+    transition: transform 0.3s ease;
+}
+
+.dijesO {
+    background-image: url('../../public/imagenes/Dijes/oro/principal.jpg');
+    transition: transform 0.3s ease;
+}
+.dijesP {
+    background-image: url('../../public/imagenes/Dijes/plata/principal.jpg');
+    transition: transform 0.3s ease;
+}
+.aretes {
+    background-image: url('../../public/imagenes/Aretes/oro/principal.jpeg');
+    transition: transform 0.3s ease;
+}
+
+/* categorías:hover */
+.opcionC:hover {
+    transform: scale(1.03);
+}

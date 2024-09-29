@@ -1,0 +1,35 @@
+1)Descripción: Cadena Clare
+Peso: 2,3 g 
+Material: plata 925
+Precio: $110.000
+
+2)Descripción: Cadena jellyfish 
+Peso: 4 gr 
+Material: plata 925
+Precio: $140.000
+
+3)Descripción: Cadena mow 
+Peso: 1,5 gr 
+Material: plata 925
+Precio: $100.000
+
+4)Descripción: Cadena South Sea 
+Peso: 5 gr 
+Material: plata 925
+Precio: $130.000
+
+5)Descripción: Cadena Cuba 
+Peso: 3 gr 
+Material: plata 925
+Precio: $115.000
+
+6)Descripción: Cadena cola de ratón
+Peso: 2,5 gr 
+Material: plata 925
+Precio: $160.000
+
+7)Descripción: Cadena primera ley
+Peso: 9 gr 
+Material: plata 925
+Precio: $250.000
+

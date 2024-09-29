@@ -1,0 +1,226 @@
+/* Styles for Products and Product Selected */
+.titlePRODUCTOS {
+    padding: 0;
+    margin-left: 100px;
+}
+
+.containerPRODCUTOS {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+}
+
+.opcionPROD {
+    padding: 10px;
+    margin: 50px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productoTexto {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.costoProdSel {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 5px;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    /* Espacio entre precio y cantidad */
+    align-items: center;
+    /* Alineación vertical */
+}
+
+.cantidadProdSel {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    /* Espacio entre precio y cantidad */
+    align-items: center;
+}
+
+.tituloPrdSel {
+    margin: 20px 0px 35px;
+}
+
+.tituloCarritoCompra {
+    margin-bottom: 10px;
+}
+
+.formDiv {
+    padding-top: 80px;
+    padding-right: 20px;
+}
+
+.tituloCarritoImg {
+    display: flex;
+    margin-left: 50px;
+}
+
+.tablaResumen {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    align-items: center;
+    gap: 10px;
+}
+
+.descCarritoCompra {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    margin: 2px 2px 2px;
+
+}
+
+.divdescCarritoCompra {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    margin: 2px 2px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prodSeleccionadoContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*por categorias, solo efecto de seleccion*/
+.imagenProdSelecionadoP {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    margin: 10px auto;
+    transition: transform 0.3s ease;
+}
+.imagenProdSelecionadoP:hover{
+    transform: scale(1.03);
+}
+
+
+.imagenProdSelecionado {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    margin: 10px auto;
+    transition: transform 0.8s ease; /* Agregamos una transición suave */
+}
+
+ .imagenProdSelecionado:hover {
+   
+    transform: scale(2.0) translate(0%, 15%);
+} 
+.carritoContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-submitImgSel {
+    width: 300px;
+    height: 40px;
+    background-color: #a76f06;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-submitCarritoCompra {
+    width: 300px;
+    height: 40px;
+    background-color: #a76f06;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.totalCarrito {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 287px;
+    padding: 5px;
+    color: white;
+}
+
+.btn-submitCarritoCompra:hover,
+.btn-submitImgSel:hover {
+    background-color: #f4a20a;
+}
+
+.tablaCarrito tr {
+    border-bottom: 1px solid #ddd;
+    /* Línea gris clara */
+}
+
+.tablaCarrito tr:last-child {
+    border-bottom: none;
+    /* Elimina la línea de la última fila */
+}
+
+.tablaCarrito td,
+.tablaCarrito th {
+    padding: 8px;
+    /* Añadir algo de espacio alrededor de las celdas */
+    text-align: left;
+    /* Alinear el texto a la izquierda */
+}
+
+.tablaCarrito {
+    margin: 0px 30px;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.buttonEliProdCarr {
+    background-color: rgba(218, 116, 116, 0.5);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.buttonEliProdCarr:hover{
+    background-color: rgba(243, 0, 0, 0.5);
+}
