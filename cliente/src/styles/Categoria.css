@@ -42,33 +42,6 @@
     text-transform: capitalize;
 }
 
-.pulseras {
-    background-image: url('../../public/imagenes/Pulseras/Oro/principal.jpg');
-    transition: transform 0.3s ease;
-}
-.anillosSolitarios {
-    background-image: url('../../public/imagenes/AnilloSolitarios/piedras/principal.jpg');
-    transition: transform 0.3s ease;
-}
-
-.anillosMatrimonio {
-    background-image: url('../../public/imagenes/AnillosdeMatrimonio/principal.jpg');
-    transition: transform 0.3s ease;
-}
-
-.dijesO {
-    background-image: url('../../public/imagenes/Dijes/oro/principal.jpg');
-    transition: transform 0.3s ease;
-}
-.dijesP {
-    background-image: url('../../public/imagenes/Dijes/plata/principal.jpg');
-    transition: transform 0.3s ease;
-}
-.aretes {
-    background-image: url('../../public/imagenes/Aretes/oro/principal.jpeg');
-    transition: transform 0.3s ease;
-}
-
 /* categorías:hover */
 .opcionC:hover {
     transform: scale(1.03);

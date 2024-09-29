@@ -10,16 +10,6 @@ import CreateMaterial from "./pages/CreateMaterial";
 import CreateCategory from "./pages/CreateCategory";
 import CreateProduct from "./pages/CreateProduct";
 import Register from "./pages/Register";
-import ProductosRelojesDeportivos from "./pages/ProductosRelojesDeportivos";
-import ProductosRelojesFormales from "./pages/ProductosRelojesFormales";
-import ProductosCadenasOro from "./pages/ProductosCadenasOro";
-import ProductosCadenasPlata from "./pages/ProductosCadenasPlata";
-import ProductosPulserasOro from "./pages/ProductosPulserasOro";
-import ProductosAnillosMatrimonio from "./pages/ProductosAnillosMatrimonio";
-import ProductosAnillosSolitarioPiedras from "./pages/ProductosAnillosSolitarioPiedras";
-import ProductosDijesOro from "./pages/ProductosDijesOro";
-import ProductosDijesPlata from "./pages/ProductosDijesPlata";
-import ProductosAretesOro from "./pages/ProductosAretesOro";
 import Carrito from "./pages/Carrito";
 import ListProducts from "./pages/ListProducts";
 import ListFacturas from "./pages/ListFacturas";
@@ -88,16 +78,6 @@ function App() {
         <Route path="/categorias" element={<Categories />} />
         <Route path="/register" element={<Register />} />
         <Route path="/categoria/:category" element={<ProductsByCategory />} />
-        <Route path="/productos/relojes/deportivos" element={<ProductosRelojesDeportivos />} />
-        <Route path="/productos/relojes/formales" element={<ProductosRelojesFormales />} />
-        <Route path="/productos/cadenas/oro" element={<ProductosCadenasOro />} />
-        <Route path="/productos/cadenas/plata" element={<ProductosCadenasPlata />} />
-        <Route path="/productos/pulseras/oro" element={<ProductosPulserasOro />} />
-        <Route path="/productos/anillos/matrimonio" element={<ProductosAnillosMatrimonio />} />
-        <Route path="/productos/anillos/solitarioPiedras" element={<ProductosAnillosSolitarioPiedras />} />
-        <Route path="/productos/dijes/oro" element={<ProductosDijesOro />} />
-        <Route path="/productos/dijes/plata" element={<ProductosDijesPlata />} />
-        <Route path="/productos/aretes/oro" element={<ProductosAretesOro />} />
         <Route path="/productSelect" element={<ProductoSeleccionado />} />
         <Route element={<PrivateRouteCliente />}>
           <Route path="/carrito" element={<Carrito />} />
