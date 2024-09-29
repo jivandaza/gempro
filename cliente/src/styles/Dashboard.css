@@ -166,7 +166,6 @@
 .columna-3, .columna-4 {
     width: 45%; /* Ancho de cada columna */
     background-color: rgb(107, 105, 105); /* Color de fondo para demostración */
-    margin-top: relative;
 }
 
 .columna-3 {

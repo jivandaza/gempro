@@ -51,17 +51,17 @@ const Dashboard = () => {
                     <div className="social-icons">
                         <div>
                             <img
-                                src="http://localhost:3001/imagenes/Social/facebook.png"
+                                src="../../public/imagenes/Social/facebook.png"
                                 alt="logoFace"
                                 className="social-icons-img"
                             />
                             <img
-                                src="http://localhost:3001/imagenes/Social/instagram.png"
+                                src="../../public/imagenes/Social/instagram.png"
                                 alt="logoInstagram"
                                 className="social-icons-img"
                             />
                             <img
-                                src="http://localhost:3001/imagenes/Social/x.png"
+                                src="../../public/imagenes/Social/x.png"
                                 alt="logoX"
                                 className="social-icons-img"
                             />
