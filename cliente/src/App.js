@@ -5,6 +5,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Categories from "./pages/Categories";
+import CategoriesByCategory from "./pages/CategoriesByCategory";
 import About from "./pages/About";
 import CreateMaterial from "./pages/CreateMaterial";
 import CreateCategory from "./pages/CreateCategory";
@@ -76,8 +77,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/acerda-de" element={<About />} />
         <Route path="/categorias" element={<Categories />} />
+        <Route path="/categorias/:category" element={<CategoriesByCategory />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/categoria/:category" element={<ProductsByCategory />} />
+        <Route path="/categorias/:cat/:category" element={<ProductsByCategory />} />
         <Route path="/productSelect" element={<ProductoSeleccionado />} />
         <Route element={<PrivateRouteCliente />}>
           <Route path="/carrito" element={<Carrito />} />

@@ -42,3 +42,24 @@ export const getAllCategories = async (req, res) => {
         });
     }
 };
+
+export const getCategoriesByCategory = async (req, res) => {
+    try {
+        const { category } = req.params;
+
+        const categories = await categoryService.getCategoriesByCategory(category);
+
+        // Verificar si se encontraron categorías
+        if (categories.length === 0) {
+            return res.status(404).json({ message: 'No se encontraron categorías.' });
+        }
+
+        return res.status(200).json({categories});
+    } catch (error) {
+        console.log(error.message || error);
+
+        res.status(500).json({
+            error: 'Ocurrió un error, intenta más tarde',
+        });
+    }
+};

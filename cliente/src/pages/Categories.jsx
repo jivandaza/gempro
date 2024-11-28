@@ -19,8 +19,18 @@ const Categories = () => {
 
          const data = await response.json();
 
-         if (response.ok)
-            setCategories(data?.categories);
+         if (response.ok){
+            const simplifiedCategories = data?.categories.map(category => {
+               const firstWord = category.name.split(' ')[0]; // Obtener la primera palabra
+               return { name: firstWord, image: category.image };
+            });
+
+            const uniqueCategories = Array.from(
+                new Map(simplifiedCategories.map(item => [item.name, item])).values()
+            );
+
+            setCategories(uniqueCategories);
+         }
          setIsLoading(false);
       };
 
@@ -38,7 +48,7 @@ const Categories = () => {
                        return (
                            <NavLink
                                key={category?._id + index}
-                               to={`/categoria/${category.name.replace(/\s+/g, '-')}`}
+                               to={`/categorias/${category.name}`}
                                className="opcionC"
                                style={{
                                   backgroundImage: `url(${category.image})`,

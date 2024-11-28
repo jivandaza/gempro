@@ -29,33 +29,19 @@ app.use(cors({
 // Middleware para registrar solicitudes HTTP
 app.use(morgan('dev'));
 
-// Función para verificar alguna falla antes de iniciar el servidor
-const startServer = async () => {
-    // Conectar a la base de datos
-    await dbConfig.connectDB();
+dbConfig.connectDB();
 
-    // Ejecutar la siembra de la base de datos si se está en desarrollo
-    if (process.env.NODE_ENV === 'development') {
-        await seedDatabase();
-    }
+// Ejecutar la siembra de la base de datos si se está en desarrollo
+if (process.env.NODE_ENV === 'development') {
+    seedDatabase();
+}
 
-    // Declaración de rutas
-    app.use('/api/auth', authRoutes);
-    app.use('/api/user', userRoutes);
-    app.use('/api/category', categoryRoutes);
-    app.use('/api/material', materialRoutes);
-    app.use('/api/product', productRoutes);
-    app.use('/api/factura', facturaRoutes);
-};
+// Declaración de rutas
+app.use('/api/auth', authRoutes);
+app.use('/api/user', userRoutes);
+app.use('/api/category', categoryRoutes);
+app.use('/api/material', materialRoutes);
+app.use('/api/product', productRoutes);
+app.use('/api/factura', facturaRoutes);
 
-startServer().then(() => {
-    // Iniciar el servidor
-    const PORT = process.env.PORT || 8080;
-    app.listen(PORT, () => {
-        console.log(`Servidor ejecutándose en el puerto ${PORT}`);
-    });
-}).catch((error) => {
-    // Mostrar mensaje de error y termina la aplicación en caso de alguna falla
-    console.error(`Error al iniciar el servidor: ${error.message}`);
-    process.exit(1);
-});
+export default app;
