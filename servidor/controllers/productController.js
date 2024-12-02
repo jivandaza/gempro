@@ -18,26 +18,38 @@ export const createProduct = async (req, res) => {
     const { name, quantity, cost, margin, category, material, description, image } = req?.body;
 
     try {
-        if (!name) {
-            return res.status(400).json({error: 'El nombre es obligatorio'});
+        if (name.length < 5) {
+            return res.status(400).json({error: 'El nombre permite mínimo 5 caracteres'});
+        }
+        if (name.length > 25) {
+            return res.status(400).json({error: 'El nombre permite máximo 25 caracteres'});
         }
         if (!quantity) {
             return res.status(400).json({error: 'La cantidad es obligatoria'});
         }
         if (parseInt(quantity) < 1) {
-            return res.status(400).json({error: 'La cantidad debe ser mayor a cero'});
+            return res.status(400).json({error: 'La cantidad debe ser mayor o igual a 1'});
+        }
+        if (parseInt(quantity) > 100) {
+            return res.status(400).json({error: 'La cantidad debe ser menor o igual a 100'});
         }
         if (!cost) {
             return res.status(400).json({error: 'El costo es obligatorio'});
         }
-        if (parseInt(cost) < 1) {
-            return res.status(400).json({error: 'El costo debe ser mayor a cero'});
+        if (parseInt(cost) < 10000) {
+            return res.status(400).json({error: 'El costo debe ser mayor o igual a $10.000'});
+        }
+        if (parseInt(cost) > 800000) {
+            return res.status(400).json({error: 'El costo debe ser menor o igual a $800.000'});
         }
         if (!margin) {
             return res.status(400).json({error: 'El margen de ganancias es obligatorio'});
         }
-        if (parseInt(margin) < 1 || parseInt(margin) > 100) {
-            return res.status(400).json({error: 'El margen de ganancias tiene un rango de 1 a 100%'});
+        if (parseInt(margin) < 1) {
+            return res.status(400).json({error: 'El margen de ganancias debe ser mayor o igual a 1%'});
+        }
+        if (parseInt(margin) > 100) {
+            return res.status(400).json({error: 'El margen de ganancias debe ser menor o igual a 100%'});
         }
         if (!category) {
             return res.status(400).json({error: 'La categoría es obligatoria'});
@@ -45,8 +57,11 @@ export const createProduct = async (req, res) => {
         if (!material) {
             return res.status(400).json({error: 'El material es obligatorio'});
         }
-        if (!description) {
-            return res.status(400).json({error: 'La descripción es obligatoria'});
+        if (description.length < 10) {
+            return res.status(400).json({error: 'La descripción permite mínimo 10 caracteres'});
+        }
+        if (description.length > 50) {
+            return res.status(400).json({error: 'La descripción permite máximo 50 caracteres'});
         }
         if (!image) {
             return res.status(400).json({error: 'Debe cargar una imagen'});
